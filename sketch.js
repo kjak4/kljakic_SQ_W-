@@ -69,17 +69,10 @@ function setup() {
   let originX = 450; // left edge of the shape controller
   let originY = 85; // top edge of the shape controller
 
-  // --- Controller body ---
-  // stroke() sets the outline colour — stroke(r,g,b) or a single greyscale value
-  // strokeWeight() sets how thick the outline is in pixels
-  // fill() sets the inside colour of the shape
   stroke(80);
   strokeWeight(2);
   fill(210);
 
-  // rect(x, y, width, height, cornerRadius)
-  // x, y = TOP-LEFT corner of the rectangle
-  // The last argument rounds all four corners by that many pixels
   circle(originX+150, originY + 15, 300);
 
 }
