@@ -44,7 +44,7 @@ function setup() {
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES 
   // ----------------------------------------------------------
-  let originX = 100; // left edge of the shape controller
+  let originX = 400; // left edge of the shape controller
   let originY = 185; // top edge of the shape controller
   stroke(255);
   strokeWeight(9);
