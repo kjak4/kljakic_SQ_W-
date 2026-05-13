@@ -49,16 +49,12 @@ function setup() {
   // width and height are built-in p5.js variables that
   // always hold the canvas width and height
   fill(180);
-  text("Image loaded from assets/images/", width / 4, 65);
-  text("Drawn using p5.js shapes", (width / 4) * 3, 65);
+  text("Image loaded from assets/images/", width / 4, 100);
+  text("Drawn using p5.js shapes", (width / 4) * 3, 100);
 
   // ----------------------------------------------------------
   // SECTION 2: DISPLAYING AN IMAGE
   // ----------------------------------------------------------
-
-  // image(img, x, y, width, height) draws a loaded image
-  // x and y are the TOP-LEFT corner of the image
-  // The last two arguments resize the image to fit that space
   image(exit8Img, 50, 85, 300, 300);
 
   // ----------------------------------------------------------
@@ -84,112 +80,7 @@ function setup() {
   // rect(x, y, width, height, cornerRadius)
   // x, y = TOP-LEFT corner of the rectangle
   // The last argument rounds all four corners by that many pixels
-  rect(originX, originY + 15, 300, 200, 40);
+  circle(originX+150, originY + 15, 300);
 
-  // --- Centre touchpad area ---
-  fill(170);
-  rect(originX + 95, originY + 65, 110, 70, 8);
-
-  // --- Left thumbstick ---
-  // ellipse(x, y, width, height)
-  // Unlike rect, x and y are the CENTRE of the ellipse — not the top-left corner
-  // Two layered ellipses (a larger outer ring + smaller inner cap) make a thumbstick
-  fill(60);
-  ellipse(originX + 65, originY + 165, 64, 64); // outer ring
-  fill(40);
-  ellipse(originX + 65, originY + 165, 36, 36); // inner cap
-
-  // --- Right thumbstick ---
-  fill(60);
-  ellipse(originX + 235, originY + 165, 64, 64);
-  fill(40);
-  ellipse(originX + 235, originY + 165, 36, 36);
-
-  // --- D-pad (two rectangles overlapping in a + shape) ---
-  // Note: these coordinates are hardcoded rather than using originX/originY
-  // because the D-pad needed to be positioned precisely on the controller body.
-  fill(50);
-  noStroke();
-  rect(482, 142.5, 28, 68, 4); // vertical bar
-  rect(482 - 18, 142.5 + 18, 64, 28, 4); // horizontal bar — offset to stay centred
-
-  // --- Face buttons ---
-  // Four circles arranged in a diamond: top, left, right, bottom
-  // Each has a different fill colour set before drawing it
-
-  fill(230, 200, 0); // yellow — top
-  ellipse(originX + 248, originY + 68, 24, 24);
-
-  fill(30, 100, 220); // blue — left
-  ellipse(originX + 224, originY + 92, 24, 24);
-
-  fill(200, 30, 30); // red — right
-  ellipse(originX + 272, originY + 92, 24, 24);
-
-  fill(30, 180, 60); // green — bottom
-  ellipse(originX + 248, originY + 116, 24, 24);
-
-  // --- Bumpers (rectangular buttons along the top edge) ---
-  stroke(80);
-  strokeWeight(2);
-  fill(190);
-  rect(originX + 18, originY, 110, 26, 10); // left bumper
-  rect(originX + 172, originY, 110, 26, 10); // right bumper
-
-  // --- Small menu buttons (centre of controller) ---
-  fill(136);
-  noStroke();
-  rect(originX + 118, originY + 45, 20, 14, 3); // left menu button
-  rect(originX + 162, originY + 45, 20, 14, 3); // right menu button
-
-  // --- Labels under each controller ---
-  noStroke();
-  fill(180);
-  textSize(13);
-  textAlign(CENTER);
-  text("controller.png", originX - 150, originY + 295);
-  text("drawn with shapes", originX + 150, originY + 295);
-
-  // --- Dividing line between the two controllers ---
-  stroke(80);
-  strokeWeight(1);
-  line(width / 2, 70, width / 2, 400);
 }
 
-// ------------------------------------------------------------
-// draw()
-// Runs repeatedly in a loop after setup() finishes.
-// Anything you want to animate or update goes here.
-// This sketch has nothing to animate, so draw() is empty.
-// ------------------------------------------------------------
-function draw() {
-  // Nothing here for now — everything is drawn once in setup()
-}
-
-// ------------------------------------------------------------
-// mousePressed()
-// A built-in p5.js event function.
-// Automatically called once every time the mouse is clicked.
-// mouseX and mouseY hold the current mouse position.
-// ------------------------------------------------------------
-function mousePressed() {
-  // Draw a random-coloured circle wherever the user clicks
-  fill(random(255), random(255), random(255));
-  noStroke();
-  circle(mouseX, mouseY, 40);
-}
-
-// ------------------------------------------------------------
-// keyPressed()
-// A built-in p5.js event function.
-// Automatically called once every time a key is pressed.
-// The key variable holds the character that was pressed.
-// ------------------------------------------------------------
-function keyPressed() {
-  // Press "k" to log the current mouse position to the Chrome console.
-  // This is a handy debug tool — use it to find coordinates when
-  // placing shapes or images on the canvas.
-  if (key === "k") {
-    console.log("Mouse X:", mouseX, "Mouse Y:", mouseY);
-  }
-}
