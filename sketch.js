@@ -29,7 +29,6 @@ function setup() {
   createCanvas(800, 500);
 
   // background() fills the canvas with a colour
-  // A single number = greyscale (0 is black, 255 is white)
   background(30, 40, 100);
 
   // ----------------------------------------------------------
