@@ -49,22 +49,23 @@ function setup() {
   // width and height are built-in p5.js variables that
   // always hold the canvas width and height
   fill(180);
-  text("Image loaded from assets/images/", width / 4, 100);
-  text("Drawn using p5.js shapes", (width / 4) * 3, 100);
+  text("Image loaded from assets/images/", width / 4, 70);
+  text("Drawn using p5.js shapes", (width / 4) * 3, 70);
 
   // ----------------------------------------------------------
   // SECTION 2: DISPLAYING AN IMAGE
   // ----------------------------------------------------------
-  image(exit8Img, 50, 85, 300, 300);
+  image(exit8Img, 50, 100, 300, 350);
 
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES 
   // ----------------------------------------------------------
-  stroke(80);
-  strokeWeight(2);
-  fill(210);
+  stroke(255);
+  strokeWeight(9);
+  fill(9, 0);
 
-  //circle((width / 4) * 3, 450, 60);
+  circle((width / 4) * 3, 200, 140);
+  circle((width / 4) * 3, 350, 170);
 
 }
 
