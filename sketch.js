@@ -51,8 +51,8 @@ function setup() {
   strokeWeight(12);
   fill(138, 184, 161);
 
-  //circle(originX, originY, 140);
- // circle(originX, originY+150, 170);
+  circle(originX, originY, 140);
+  circle(originX, originY+150, 170);
 
   strokeWeight(0);
   fill(209, 25, 25);
