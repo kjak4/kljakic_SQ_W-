@@ -44,14 +44,14 @@ function setup() {
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES 
   // ----------------------------------------------------------
-  let originX = 450; // left edge of the shape controller
-  let originY = 85; // top edge of the shape controller
+  let originX = 600; // left edge of the shape controller
+  let originY = 185; // top edge of the shape controller
   stroke(255);
   strokeWeight(9);
   fill(9);
 
-  circle(originX, 200, 140);
-  circle(originX, 350, 170);
+  circle(originX, originY, 140);
+  circle(originX, originY+150, 170);
 
 }
 
