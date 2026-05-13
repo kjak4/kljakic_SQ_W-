@@ -50,8 +50,8 @@ function setup() {
   strokeWeight(9);
   fill(9);
 
-  circle(originX+300, originY, 140);
-  circle(originX+300, originY+150, 170);
+  circle(originX-300, originY, 140);
+  circle(originX-300, originY+150, 170);
 
 }
 
