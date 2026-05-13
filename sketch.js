@@ -4,7 +4,7 @@
 
 // Variables declared outside of setup() and draw() are
 // accessible everywhere in the sketch (global scope).
-let jengaImg;
+let exit8Img;
 
 // ------------------------------------------------------------
 // preload()
@@ -15,7 +15,7 @@ let jengaImg;
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  jengaImg = loadImage("assets/images/controller.png");
+  exit8Img = loadImage("assets/images/exit8.jpg");
 }
 
 // ------------------------------------------------------------
@@ -60,7 +60,7 @@ function setup() {
   // image(img, x, y, width, height) draws a loaded image
   // x and y are the TOP-LEFT corner of the image
   // The last two arguments resize the image to fit that space
-  image(jengaImg, 50, 85, 300, 300);
+  image(exit8Img, 50, 85, 300, 300);
 
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES (a controller made of shapes!)
