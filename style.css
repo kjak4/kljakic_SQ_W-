@@ -13,5 +13,5 @@ body {
 }
 
 canvas {
-  display: inline;
+  display: block;
 }
