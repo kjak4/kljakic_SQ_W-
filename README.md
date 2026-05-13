@@ -14,7 +14,7 @@ To play via GitHub Pages, visit the link pasted here: https://kjak4.github.io/kl
 
 | File | Source |
 |------|--------|
-| `assets/images/exit8.jpg` | Taken from IMDb websit[1] |
+| `assets/images/exit8.jpg` | Taken from IMDb website[1] |
 
 ## References
 
