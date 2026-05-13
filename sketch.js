@@ -1,10 +1,10 @@
 // ============================================================
-// Week 1 Example 1: Images and Shapes
+// Side Quest 1: Exit 8
 // ============================================================
 
 // Variables declared outside of setup() and draw() are
 // accessible everywhere in the sketch (global scope).
-let controllerImg;
+let jengaImg;
 
 // ------------------------------------------------------------
 // preload()
@@ -15,7 +15,7 @@ let controllerImg;
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  controllerImg = loadImage("assets/images/controller.png");
+  jengaImg = loadImage("assets/images/controller.png");
 }
 
 // ------------------------------------------------------------
@@ -26,11 +26,11 @@ function preload() {
 // ------------------------------------------------------------
 function setup() {
   // createCanvas(width, height) sets the size of your canvas in pixels
-  createCanvas(800, 300);
+  createCanvas(800, 500);
 
   // background() fills the canvas with a colour
   // A single number = greyscale (0 is black, 255 is white)
-  background(30);
+  background(30, 40, 100);
 
   // ----------------------------------------------------------
   // SECTION 1: TEXT
