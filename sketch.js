@@ -44,7 +44,7 @@ function setup() {
   // ----------------------------------------------------------
   // SECTION 3: DRAWING SHAPES 
   // ----------------------------------------------------------
-  let originX = 400; 
+  let originX = 600; 
   let originY = 185; // 
   stroke(255);
   strokeWeight(9);
