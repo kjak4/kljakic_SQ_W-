@@ -58,22 +58,13 @@ function setup() {
   image(exit8Img, 50, 85, 300, 300);
 
   // ----------------------------------------------------------
-  // SECTION 3: DRAWING SHAPES (a controller made of shapes!)
+  // SECTION 3: DRAWING SHAPES 
   // ----------------------------------------------------------
-  // All shapes are drawn relative to an origin point (originX, originY)
-  // so the whole drawing can be moved by changing those two values.
-
-  // originX and originY act as the anchor point for the whole drawing.
-  // Changing these two values moves the entire controller at once —
-  // a useful habit for keeping drawings easy to reposition.
-  let originX = 450; // left edge of the shape controller
-  let originY = 85; // top edge of the shape controller
-
   stroke(80);
   strokeWeight(2);
   fill(210);
 
-  circle(originX+150, originY + 15, 300);
+  circle((width / 4) * 3, 350, 80);
 
 }
 
