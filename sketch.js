@@ -64,7 +64,7 @@ function setup() {
   strokeWeight(2);
   fill(210);
 
-  circle((width / 4) * 3, 450, 60);
+  //circle((width / 4) * 3, 450, 60);
 
 }
 
